@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Roboto:ital,wght@0,700;1,300&display=swap');
+@font-face { font-family: "Manga"; src: url("../app/assets/Manga.ttf"); font-weight: 400;
+  font-style: normal; }
+  @font-face { font-family: "Yonezawa"; src: url("../app/assets/Yonezawa.ttf"); font-weight: 400;
+    font-style: normal; }
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 25, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.custom-underline {
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-decoration-style: dashed;
+}
+
+.another-class {
+  font-family: 'Manga', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.yonezawa {
+  font-family: 'Yonezawa', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.nav-item {
+  font-family: 'Antonio', sans-serif; /* Example usage */
+}
+
